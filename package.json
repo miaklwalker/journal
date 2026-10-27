@@ -1,6 +1,6 @@
 {
 	"name": "@michaelrwalker/journal",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A typed, file-backed journal of entries you can snapshot, mutate and revert. Validates with any Standard Schema library.",
 	"type": "module",
 	"main": "main.ts",
