@@ -1,0 +1,29 @@
+{
+	"sections": [
+		{
+			"label": "Getting Started",
+			"children": [
+				{ "label": "Overview", "to": "overview" },
+				{ "label": "Installation", "to": "installation" },
+				{ "label": "Quick Start", "to": "quick-start" }
+			]
+		},
+		{
+			"label": "Guides",
+			"children": [
+				{ "label": "Snapshot and revert", "to": "guides/snapshot-and-revert" },
+				{ "label": "Schemas", "to": "guides/schemas" },
+				{ "label": "Migrations", "to": "guides/migrations" },
+				{ "label": "Saving and the file", "to": "guides/saving" },
+				{ "label": "Type safety", "to": "guides/type-safety" }
+			]
+		},
+		{
+			"label": "Reference",
+			"children": [
+				{ "label": "Journal API", "to": "reference/api" },
+				{ "label": "Errors", "to": "reference/errors" }
+			]
+		}
+	]
+}

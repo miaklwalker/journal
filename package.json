@@ -1,0 +1,49 @@
+{
+	"name": "@michaelrwalker/journal",
+	"version": "0.0.0",
+	"description": "A typed, file-backed journal of entries you can snapshot, mutate and revert. Validates with any Standard Schema library.",
+	"type": "module",
+	"main": "main.ts",
+	"types": "main.ts",
+	"exports": {
+		".": "./main.ts"
+	},
+	"files": [
+		"modules",
+		"main.ts",
+		"README.md"
+	],
+	"scripts": {
+		"test": "node --test --experimental-transform-types --disable-warning=ExperimentalWarning \"tests/**/*.test.ts\"",
+		"typecheck": "tsc --noEmit",
+		"format": "biome format --write",
+		"fix": "biome lint --write",
+		"release": "release-it"
+	},
+	"keywords": [],
+	"publishConfig": {
+		"access": "public"
+	},
+	"release-it": {
+		"$schema": "https://unpkg.com/release-it/schema/release-it.json",
+		"git": {
+			"commit": true,
+			"tag": true,
+			"push": true,
+			"commitMessage": "chore: release v${version}"
+		},
+		"github": {
+			"release": true
+		},
+		"npm": {
+			"publish": true
+		}
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.6.3",
+		"@types/node": "^26.6.5",
+		"release-it": "^21.1.1",
+		"typescript": "^7.0.2",
+		"zod": "^4.6.7"
+	}
+}
